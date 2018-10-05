@@ -25,7 +25,7 @@ python3 manage.py startapp main_app
 ```
 djangoproject
 |
- - djangoproject
+| - djangoproject
 |   |
 |   |- settings.py: Main settings for project (db, apps, config, etc.)
 |   |- urls.py: Main URLs for entire project
@@ -40,4 +40,12 @@ djangoproject
 |  |- urls.py: Every URL for our site is defined here
 |
 |- manage.py: Lets us manage everything about our project
+```
+## How to make URLs with the path() function:
+```python
+urlpatterns = [
+ path('route1/', views.route1_name, name='route1_name'),
+ path('route2/<string_variable>', views.route2_name, name='route2_name'),
+ path('route3/<int:variable_name>', views.route3_name, name='route3_name'),
+]
 ```
