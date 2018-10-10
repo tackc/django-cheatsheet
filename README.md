@@ -62,3 +62,9 @@ def route2_name(request, string_variable):
 def route3_name(request, variable_name):
     return render(request, 'template3.html', {'data': variable_name})
 ```
+
+## How to make migrations
+```python
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
